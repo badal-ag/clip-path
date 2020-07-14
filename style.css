@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background: #ffffff;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, lfr);
+    background: #ff4500;
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.menu ul li {
+    padding: 24px;
+    margin: 12px;
+    /*background: #121212;*/ 
+    border-radius: 50%;
+    color: #fff;
+}
+
+.menu {
+    clip-path: circle(24px at 28px 28px);
+    transition: clip-path .8s ease-in-out;
+}
+
+.menu:hover {
+    clip-path: circle(625px at 28px 28px);
+    cursor: pointer;
+}
